@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Grocery</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navigation">
+      <div class="page-title">E-Grocery</div>
+      <div class="nav">
+        <a href="#title" class="nav-item">Home</a>
+        <a href="#our-package" class="nav-item">Our Package</a>
+        <a href="#contact-us" class="nav-item">Call Us</a>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+      <div id="title" class="content-title">
+        <div>
+          <h1>Top Rated E-Groceries Shop in Indonesian</h1>
+        </div>
+        <div>
+          <span>-- Every Day with best ingredients --</span>
+        </div>
+      </div>
+      <div id="content" class="content">
+        <div id="content-left" class="content-left">
+          <div id="content-image" class="content-image">
+            <div class="slides">
+              <div class="slide">
+                <img src="asset/sayur1.jpg" alt="slider image" />
+              </div>
+              <div class="slide">
+                <img src="asset/sayur2.jpg" alt="slider image" />
+              </div>
+              <div class="nav-button">
+                <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+                <a class="next" onclick="plusSlide(-1)">&#10095</a>
+              </div>
+            </div>
+            <!-- <img src="asset/sayur1.jpg" class="image" alt="slider image" /> -->
+            <span>"Setiap hari beli sayur buah yang fresh disini"</span>
+          </div>
+        </div>
+        <div id="content-right" class="content-right">
+          <form class="content-form">
+            <label for="your-name">Your Name</label>
+            <input type="text" name="your-name" placeholder="First Name" />
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" placeholder="example@email.com" />
+
+            <label for="interest">What are you interested in?</label>
+            <select type="select" name="interest">
+              <option>Vegetable</option>
+              <option>Fruit</option>
+            </select>
+
+            <button id="button" type="submit" class="button">SEND</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- our-package -->
+    <div id="our-package" class="our-package">
+      <h2>Manfaat Sayur dan Buah</h2>
+      <div class="main-package">
+        <div class="number">
+            <div class="circle">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+        </div>
+        <div>
+          <div class="content-package">Meningkatkan daya ingat, adanya zat antoksidan dapat melindungi sel-sel otak.</div>
+          <div class="content-package">Membuat tubuh lebih bugar, kandungan vitamin dan mineral yang tinggi bersama dengan enzim bereaksi memproduksi energi sehingga membuat tubuh menjadi lebih bugar. </div>
+          <div class="content-package">Melancarkan buang air besar, kandungan serat yang tinggi yang dapat meningkatkan kelancaran metabolisme tubuh.</div>
+          <div class="content-package">Menurunkan kolesterol dan melancarkan pencernaan karena kandungan serat yang tinggi.</div>
+          <div class="content-package">Menjaga kesehatan tulang dan gigi, buah dan sayur seperti bayam, lobak, alpukat, dan jeruk menjadi sumber kalsium yang baik.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact-us">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <div class="name">
+            <label for="your-name">Name : </label>
+            <input type="text" name="your-name" placeholder="insert name" />
+          </div>
+          <div class="date">
+            <label for="date">Date : </label>
+            <input type="date" name="date" />
+          </div>
+          <div class="gender">
+            <label for="interest">Gender : </label>
+            <input type="radio" name="jk" value="L"> Male
+            <input type="radio" name="jk" value="P"> Female
+          </div>
+          <div class="message">
+            <label for="message">Message : </label>
+            <input type="textarea" name="message" placeholder="insert message"/>
+          </div>
+            <button id="button" type="submit" class="button">SEND</button>
+          </form>
+    </div>
+  </body>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</html>
